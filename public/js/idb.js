@@ -1,12 +1,11 @@
-// create variable to hold db connection
+
 let db;
 
 const request = indexedDB.open('budget_tracker', 1);
 
-
 request.onupgradeneeded = function(event) {
   const db = event.target.result;
-  db.createObjectStore('new_pizza', { autoIncrement: true });
+  db.createObjectStore('new_budget', { autoIncrement: true });
 };
 
 request.onsuccess = function(event) {
@@ -20,7 +19,6 @@ request.onsuccess = function(event) {
 request.onerror = function(event) {
   console.log(event.target.errorCode);
 };
-
 
 function saveRecord(record) {
   const budget = db.transaction(['new_budget'], 'readwrite');
