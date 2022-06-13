@@ -62,9 +62,4 @@ function uploadBudget() {
   };
 }
 
-function deletePending() {
-  const budget = db.transaction(["new_budget"], "readwrite");
-  const budgetObjectStore = budget.objectStore("new_budget");
-  budgetObjectStore.clear();
-}
 window.addEventListener("online", uploadBudget);
