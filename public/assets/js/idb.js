@@ -51,7 +51,7 @@ function uploadBudget() {
           const budgetObjectStore = budget.objectStore('new_budget');
           budgetObjectStore.clear();
 
-          alert('All saved pizza has been submitted!');
+          alert('budget has been submitted!');
         })
         .catch(err => {
           console.log(err);
