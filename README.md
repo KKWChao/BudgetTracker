@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Deployed Application on Heroku
-https://dashboard.heroku.com/apps/arcane-sands-29881 
+https://arcane-sands-29881.herokuapp.com/
 
 Github
 https://github.com/KKWChao/BudgetTracker 
